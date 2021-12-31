@@ -1,0 +1,38 @@
+{
+  "name": "@jaspesoft/pubsub",
+  "version": "1.0.0",
+  "description": "Lib para la comunicación entre microservicios utilizando PUBSUB",
+  "main": "dist/index.js",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "clean": "rimraf dist",
+    "build": "tsc -p tsconfig.build.json",
+    "format": "prettier --write \"src/**/*.ts\"  ",
+    "format:check": "prettier --check \"src/**/*.ts\" "
+  },
+  "repository": {
+    "type": "git",
+    "url": "\"git+https://github.com/jaspesoft/jaspe-pubsub.git\""
+  },
+  "keywords": [
+    "PubSub",
+    "node",
+    "typescript",
+    "microservice"
+  ],
+  "author": "jaspesoft@gmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jaspesoft/jaspe-pubsub/issues"
+  },
+  "homepage": "https://github.com/jaspesoft/jaspe-pubsub#readme",
+  "dependencies": {
+    "@google-cloud/pubsub": "^2.18.4",
+    "dotenv": "^10.0.0"
+  },
+  "devDependencies": {
+    "prettier": "^2.5.1",
+    "ts-node": "^10.4.0",
+    "typescript": "^4.5.4"
+  }
+}
