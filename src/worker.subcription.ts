@@ -24,6 +24,7 @@ export class WorkerSubcription {
 
     let messageCount = 0;
     const messageHandler = (message: any) => {
+      messageCount++;
       console.log(`Received message id: ${message.id}\t`);
       console.log(`Received message Data: ${message.data}`);
       console.log(`\tAttributes: ${message.attributes}`);
