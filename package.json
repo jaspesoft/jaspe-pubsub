@@ -1,6 +1,6 @@
 {
   "name": "@jaspesoft/pubsub",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Lib para la comunicación entre microservicios utilizando PUBSUB",
   "main": "dist/index.js",
   "types": "./dist/index.d.ts",

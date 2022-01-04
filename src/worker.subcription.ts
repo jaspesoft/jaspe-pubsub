@@ -30,7 +30,7 @@ export class WorkerSubcription {
       console.log(`\tAttributes: ${message.attributes}`);
       message.ack();
       if (messageCount === 1) {
-        callback(message.data);
+        callback(JSON.parse(message.data));
       }
     };
 
